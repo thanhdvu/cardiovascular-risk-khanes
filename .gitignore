@@ -1,2 +1,4 @@
 .DS_Store
 분석데이터원본/*.sav
+processed_data/
+.ipynb_checkpoints/
