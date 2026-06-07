@@ -1,7 +1,0 @@
-metric,original_model,expanded_feature_model
-sample_size_after_missing_filtering,9889,9889
-precision,0.1372,0.1434
-recall,0.7248,0.7064
-f1,0.2307,0.2384
-roc_auc,0.7952,0.8084
-average_precision,0.1784,0.1819

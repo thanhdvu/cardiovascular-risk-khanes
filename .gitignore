@@ -1,6 +1,11 @@
 .DS_Store
+분석데이터원본/
 분석데이터원본/*.sav
 processed_data/
 .ipynb_checkpoints/
 .venv311/
 logs.log
+~$*.docx
+*.tmp.docx
+__pycache__/
+*.pyc
