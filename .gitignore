@@ -1,6 +1,9 @@
 .DS_Store
 분석데이터원본/*.sav
-processed_data/
 .ipynb_checkpoints/
 .venv311/
-logs.log
+__pycache__/
+*.pyc
+*.log
+streamlit_*.log
+catboost_info/

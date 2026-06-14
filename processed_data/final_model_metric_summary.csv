@@ -1,0 +1,10 @@
+﻿Metric,Value
+TN,1133.0
+FP,457.0
+FN,161.0
+TP,313.0
+Precision,0.406
+Recall,0.66
+F1,0.503
+ROC AUC,0.765
+Average Precision,0.511
