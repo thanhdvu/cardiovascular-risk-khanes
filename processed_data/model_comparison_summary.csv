@@ -1,0 +1,6 @@
+﻿Model,Accuracy,AUC,Recall,Prec.,F1
+Logistic Regression,0.7146,0.7855,0.716,0.4278,0.5354
+CatBoost Classifier,0.7921,0.7772,0.3483,0.5807,0.435
+Light Gradient Boosting Machine,0.7958,0.7746,0.3593,0.5922,0.4469
+Random Forest Classifier,0.7906,0.774,0.3393,0.575,0.4266
+Extreme Gradient Boosting,0.7845,0.7497,0.3588,0.5473,0.433
