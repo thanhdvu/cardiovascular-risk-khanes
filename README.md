@@ -37,6 +37,8 @@ Holdout set 기준 최종 모델 결과:
 
 ## 5. Streamlit 사용
 
+배포된 웹 앱: [KNHANES 고혈압 위험 예측](https://cardiovascular-risk-khanes-pvf92xrpaqysfvbk7hepxs.streamlit.app/)
+
 아래 명령어로 예측 데모 앱을 실행할 수 있다.
 
 ```bash
