@@ -379,6 +379,10 @@ st.markdown(
                 <span class="inline-tooltip-text">국민건강영양조사 자료입니다. 본 프로젝트는 2017-2023년 자료를 사용했습니다.</span>
             </span>
             <span class="hero-badge">Young Adults 19-39</span>
+            <span class="hero-badge inline-tooltip">post-COVID 기준 (2022-2023)
+                <span class="tooltip-dot">?</span>
+                <span class="inline-tooltip-text">KNHANES 측정체계가 통일된 코로나 이후(2022-2023) 환경을 기준으로 예측합니다.</span>
+            </span>
             <span class="hero-badge inline-tooltip">PyCaret ML Model
                 <span class="tooltip-dot">?</span>
                 <span class="inline-tooltip-text">수업에서 사용한 자동화 머신러닝 라이브러리 기반 모델입니다.</span>
@@ -395,7 +399,7 @@ left, right = st.columns([2.15, 1], gap="large")
 with left:
     st.subheader("입력 정보")
 
-    covid_period = "after"
+    covid_period = "after"   # post-COVID(코로나 이후) 측정환경 기준 — 측정체계 일관 구간
     demo1, demo2 = st.columns([1, 1])
     with demo1:
         age = st.slider("나이", 19, 39, 25, help="만 나이 기준입니다. 본 프로젝트는 19-39세 젊은 성인을 대상으로 합니다.")
