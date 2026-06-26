@@ -16,6 +16,8 @@
 
 HDL은 측정 시기별 변화 가능성이 있어 주분석 모델에서 제외하였다. LDL은 전체 결측률이 약 68%로 높아 주분석에서 제외하였다. `HE_sbp`, `HE_dbp`는 target 생성에만 사용하고 모델 feature에서는 제외하였다.
 
+발표 후 교수님 피드백을 반영하여 식이 변수인 나트륨 섭취량(`N_NA`)과 칼륨 섭취량(`N_K`)을 추가하였다. 두 변수는 결측률이 약 14.7%로 30% 기준 이하이므로 결측치 대체 후 모델에 포함하였다.
+
 ## 3. Notebook 실행 순서
 
 1. `01_data_understanding.ipynb`
@@ -29,11 +31,11 @@ PyCaret workflow를 중심으로 `setup()` → `compare_models()` → 상위 모
 
 Holdout set 기준 최종 모델 결과:
 
-- Precision: 0.406
-- Recall: 0.660
-- F1: 0.503
-- ROC AUC: 0.765
-- Average Precision: 0.511
+- Precision: 0.409
+- Recall: 0.667
+- F1: 0.507
+- ROC AUC: 0.766
+- Average Precision: 0.516
 
 ## 5. Streamlit 사용
 

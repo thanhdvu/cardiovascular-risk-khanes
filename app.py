@@ -476,6 +476,38 @@ with left:
             )
 
     with st.container(border=True):
+        st.markdown('<div class="section-label">DIET VARIABLES</div>', unsafe_allow_html=True)
+        st.markdown(
+            '<div class="section-header"><div class="section-title">식이 변수</div><div class="section-line"></div></div>',
+            unsafe_allow_html=True,
+        )
+        st.markdown(
+            '<div class="section-guide">KNHANES 영양조사의 1일 섭취량 변수입니다. 잘 모르면 기본값을 사용해도 됩니다.</div>',
+            unsafe_allow_html=True,
+        )
+        d1, d2 = st.columns(2)
+        with d1:
+            medical_label("나트륨 섭취량(mg/day)", "하루 동안 섭취한 나트륨 양입니다. 짠 음식 섭취 정도와 관련됩니다.")
+            n_na = st.number_input(
+                "나트륨 섭취량(mg/day)",
+                min_value=0.0,
+                max_value=15000.0,
+                value=2967.0,
+                step=100.0,
+                label_visibility="collapsed",
+            )
+        with d2:
+            medical_label("칼륨 섭취량(mg/day)", "하루 동안 섭취한 칼륨 양입니다. 채소·과일 섭취와 관련될 수 있습니다.")
+            n_k = st.number_input(
+                "칼륨 섭취량(mg/day)",
+                min_value=0.0,
+                max_value=10000.0,
+                value=2350.0,
+                step=100.0,
+                label_visibility="collapsed",
+            )
+
+    with st.container(border=True):
         st.markdown('<div class="section-label">LIFESTYLE & SOCIOECONOMIC</div>', unsafe_allow_html=True)
         st.markdown(
             '<div class="section-header"><div class="section-title">생활습관 및 사회경제 변수</div><div class="section-line"></div></div>',
@@ -559,6 +591,8 @@ input_data = pd.DataFrame(
             "HE_HbA1c": he_hba1c,
             "HE_TG": he_tg,
             "HE_chol": he_chol,
+            "N_NA": n_na,
+            "N_K": n_k,
             "sex": sex,
             "sm_presnt": sm_presnt,
             "dr_month": dr_month,

@@ -1,0 +1,11 @@
+﻿variable,label,Normal (n=7947),Hypertension (n=2372),test,p
+age,나이,29.5 ± 6.1,31.2 ± 5.9,Welch's t-test,<0.001
+HE_BMI,BMI,22.9 ± 3.8,26.3 ± 5.0,Welch's t-test,<0.001
+HE_wc,허리둘레,77.9 ± 10.7,88.3 ± 12.8,Welch's t-test,<0.001
+HE_glu,공복혈당,91.1 ± 12.4,97.8 ± 20.2,Welch's t-test,<0.001
+HE_HbA1c,HbA1c,5.3 ± 0.4,5.5 ± 0.7,Welch's t-test,<0.001
+HE_TG,중성지방,101.9 ± 75.5,158.0 ± 134.5,Welch's t-test,<0.001
+HE_chol,총콜레스테롤,185.7 ± 33.3,198.2 ± 34.8,Welch's t-test,<0.001
+N_NA,나트륨 섭취량,3214.0 ± 1872.0,3807.4 ± 2268.2,Welch's t-test,<0.001
+N_K,칼륨 섭취량,2489.0 ± 1213.3,2724.0 ± 1338.4,Welch's t-test,<0.001
+sex_male,남성 비율(%),39.0,71.1,Chi-square test,<0.001
